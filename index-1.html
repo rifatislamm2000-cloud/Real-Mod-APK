@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#202124">
+<meta name="monetag" content="18a821a7439fb558fed8b704ec0eb7a7">
+<title>Real Mod APK — Apps & Tools</title>
+<style>
+:root{--green:#80bd3f;--orange:#ef790d;--ink:#202124;--muted:#777d85;--bg:#f7f8fa;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Roboto,"Segoe UI",Arial,sans-serif;background:var(--bg);color:#202124}
+button,input{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}
+.topbar{background:#202124;color:#fff;padding:12px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px #0002}
+.brandmark{width:42px;height:42px;border-radius:12px;background:var(--green);display:grid;place-items:center;color:white;font-weight:900;font-size:19px}
+.brand{font-size:20px;font-weight:800;letter-spacing:.2px;flex:1}.brand span{color:var(--green)}
+.search-toggle,.back{border:0;background:transparent;color:white;font-size:23px;padding:8px;cursor:pointer}
+.searchrow{padding:12px 16px;background:#fff;box-shadow:0 3px 8px #0001;display:flex;gap:8px}
+.searchrow input{width:100%;border:1px solid #ddd;border-radius:12px;padding:12px 14px;outline-color:var(--green)}
+main{max-width:1000px;margin:auto;padding:18px 16px 90px}.hero{background:linear-gradient(120deg,#17221a,#315e2b);color:#fff;border-radius:18px;padding:24px 20px;margin:6px 0 28px;min-height:160px;display:flex;align-items:center;justify-content:space-between;gap:16px;overflow:hidden}
+.hero h1{font-size:clamp(25px,5vw,36px);margin:0 0 9px}.hero p{color:#e3eedc;line-height:1.5;margin:0;max-width:470px}.hero-badge{font-size:64px;filter:drop-shadow(0 5px 12px #0004)}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin:24px 0 14px}.section-head h2{font-size:23px;margin:0}.section-head small{color:var(--green);font-weight:700}
+.filters{display:flex;gap:9px;overflow:auto;padding:2px 0 14px}.filter{border:1px solid #ddd;background:#fff;color:#666;border-radius:25px;padding:9px 16px;white-space:nowrap;cursor:pointer}.filter.active{background:var(--green);border-color:var(--green);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.appcard{border:0;text-align:left;background:#fff;border-radius:17px;padding:13px;box-shadow:0 3px 10px #0000000c;cursor:pointer;min-width:0;color:inherit;transition:transform .15s,box-shadow .15s}.appcard:hover{transform:translateY(-2px);box-shadow:0 7px 18px #00000012}
+.logo{width:100%;aspect-ratio:1;border-radius:17px;object-fit:contain;background:#f1f3f4;padding:10px;display:block}.appname{font-size:15px;font-weight:700;margin:11px 0 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.appmeta{font-size:12px;color:var(--muted)}
+.pill{display:inline-block;background:#fff0e4;color:#d76a00;border-radius:6px;font-size:10px;font-weight:800;padding:4px 7px;margin-top:8px}
+.detail{background:#202124;color:white;border-radius:18px;overflow:hidden;margin-top:6px}.detail-hero{padding:25px 20px;background:radial-gradient(ellipse at top right,#315a37,#202124 65%)}.detail-top{display:flex;align-items:center;gap:17px}.detail-logo{width:100px;height:100px;border-radius:22px;object-fit:contain;background:#fff;padding:8px;flex-shrink:0}.detail h1{font-size:25px;margin:0 0 8px}.publisher{color:#9aca67}.tag{display:inline-block;border-radius:18px;padding:7px 11px;font-size:12px;background:#355b27;margin:12px 6px 0 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;border-top:1px solid #ffffff20;margin-top:24px;padding-top:20px;gap:10px}.stats strong{display:block;font-size:18px}.stats span{display:block;color:#aeb2b7;font-size:12px;margin-top:6px}
+.detail-body{background:#fff;color:#202124;padding:22px 20px}.detail-body h2{font-size:21px;margin:4px 0 10px}.detail-body p{color:#656a70;line-height:1.65}.download{display:block;text-align:center;text-decoration:none;background:var(--green);color:white;font-weight:800;padding:16px;border-radius:32px;margin:22px 0 8px}.notice{font-size:12px;color:#7a7e83;line-height:1.5}
+.hidden{display:none!important}.empty{padding:35px;text-align:center;color:#777}.bottomnav{position:fixed;bottom:0;left:0;right:0;z-index:9;background:#fff;border-top:1px solid #ddd;display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));}.navitem{background:none;border:0;color:#999;font-size:11px;display:grid;gap:3px;justify-items:center;cursor:pointer}.navitem b{font-size:21px;font-weight:500}.navitem.active{color:var(--green)}
+footer{text-align:center;color:#92969c;font-size:12px;padding:28px 8px 10px}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.hero{padding:21px 17px}.hero-badge{font-size:48px}.brand{font-size:18px}.detail-logo{width:82px;height:82px}.detail h1{font-size:21px}}
+@media(min-width:701px){.searchrow{padding-left:max(16px,calc((100% - 968px)/2));padding-right:max(16px,calc((100% - 968px)/2))}.bottomnav{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brandmark">R</div><div class="brand">REAL <span>MOD APK</span></div>
+  <button class="search-toggle" aria-label="Focus search" onclick="document.getElementById('search').focus()">⌕</button>
+</header>
+<div class="searchrow"><input id="search" type="search" placeholder="Search apps..." aria-label="Search apps"></div>
+<main>
+  <section id="home">
+    <div class="hero"><div><h1>Apps for your phone</h1><p>Discover useful video editors, music tools and creative apps in one place.</p></div><div class="hero-badge">▣</div></div>
+    <div class="section-head"><h2>Popular Apps</h2><small id="count">7 APPS</small></div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-cat="All">All</button><button class="filter" data-cat="Video">Video Editors</button><button class="filter" data-cat="Music">Music</button><button class="filter" data-cat="Tools">Tools</button><button class="filter" data-cat="Launcher">Launcher</button>
+    </div>
+    <div class="grid" id="appGrid"></div>
+    <div id="empty" class="empty hidden">No apps found. Try another search.</div>
+  </section>
+  <section id="appDetail" class="hidden"></section>
+  <footer>Real Mod APK · App information and links are provided for reference.</footer>
+</main>
+<nav class="bottomnav">
+  <button class="navitem active" id="navHome" onclick="showHome()"><b>⌂</b>Home</button>
+  <button class="navitem" onclick="document.getElementById('search').focus()"><b>⌕</b>Search</button>
+  <button class="navitem" onclick="showHome();setCategory('Video')"><b>▧</b>Apps</button>
+  <button class="navitem" onclick="showHome();setCategory('Tools')"><b>◉</b>Tools</button>
+</nav>
+<script>
+const apps = [
+ {id:'capcut',name:'CapCut',subtitle:'Video Editor',cat:'Video',version:'Latest version',size:'Varies',desc:'A video editing app for creating and editing short videos. Check the official listing for current features and version details.',logo:'https://upload.wikimedia.org/wikipedia/commons/3/3c/CapCut_Logo.png',link:'https://www.capcut.com/'},
+ {id:'ytmusic',name:'YouTube Music',subtitle:'Music & Audio',cat:'Music',version:'Latest version',size:'Varies',desc:'Explore music, albums, playlists and music videos. Availability and features can vary by country and subscription.',logo:'https://upload.wikimedia.org/wikipedia/commons/d/d8/YouTubeMusic_Logo.png',link:'https://music.youtube.com/'},
+ {id:'vn',name:'VN Video Editor',subtitle:'Video Editor',cat:'Video',version:'Latest version',size:'Varies',desc:'A multi-track video editor for creating and editing videos. Visit the official site for current app information.',logo:'https://www.vlognow.me/favicon.ico',link:'https://www.vlognow.me/'},
+ {id:'anime',name:'Anime Launcher',subtitle:'Launcher',cat:'Launcher',version:'Not verified',size:'Not verified',desc:'Launcher listing supplied by the site owner. Verify the publisher and file before installing.',logo:'https://www.google.com/s2/favicons?domain=play.google.com&sz=256',link:'https://play.google.com/store/search?q=Anime%20Launcher&c=apps'},
+ {id:'wink',name:'Wink',subtitle:'Photo & Video',cat:'Video',version:'Latest version',size:'Varies',desc:'Photo and video enhancement app. Check the official listing for the correct publisher and supported features.',logo:'https://www.google.com/s2/favicons?domain=wink.cn&sz=256',link:'https://wink.cn/'},
+ {id:'24fps',name:'24FPS',subtitle:'Video Editor',cat:'Video',version:'Not verified',size:'Not verified',desc:'App details have not yet been verified. Check the official store or developer page for current information.',logo:'https://www.google.com/s2/favicons?domain=play.google.com&sz=256',link:'https://play.google.com/store/search?q=24FPS&c=apps'},
+ {id:'xrecorder',name:'XRecorder',subtitle:'Screen Recorder',cat:'Tools',version:'Latest version',size:'Varies',desc:'A screen-recording utility. Visit the official store listing for current details and permissions.',logo:'https://www.google.com/s2/favicons?domain=play.google.com&sz=256',link:'https://play.google.com/store/search?q=XRecorder&c=apps'}
+];
+const grid=document.getElementById('appGrid'), search=document.getElementById('search'); let category='All';
+function safeLogo(src){return src}
+function render(){
+ const q=search.value.toLowerCase().trim(); const list=apps.filter(a=>(category==='All'||a.cat===category)&&(a.name+' '+a.subtitle+' '+a.cat).toLowerCase().includes(q));
+ grid.innerHTML=''; list.forEach(a=>{const b=document.createElement('button');b.className='appcard';b.innerHTML=`<img class="logo" src="${safeLogo(a.logo)}" alt="${a.name} logo" onerror="this.onerror=null;this.src='https://placehold.co/256x256/eef3e8/47772c?text='+encodeURIComponent('${a.name}')"><div class="appname">${a.name}</div><div class="appmeta">${a.subtitle}</div><span class="pill">APP</span>`;b.addEventListener('click',()=>showDetail(a.id));grid.appendChild(b)});
+ document.getElementById('empty').classList.toggle('hidden',list.length!==0);document.getElementById('count').textContent=list.length+' APPS';
+}
+function setCategory(cat){category=cat;document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b.dataset.cat===cat));render()}
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>setCategory(b.dataset.cat)));
+search.addEventListener('input',render);
+function showDetail(id){
+ const a=apps.find(x=>x.id===id);if(!a)return;
+ document.getElementById('home').classList.add('hidden');const d=document.getElementById('appDetail');d.classList.remove('hidden');
+ d.innerHTML=`<button class="back" onclick="showHome()" style="color:#333;padding:4px 0 16px">← Back to apps</button><article class="detail"><div class="detail-hero"><div class="detail-top"><img class="detail-logo" src="${a.logo}" alt="${a.name} logo" onerror="this.onerror=null;this.src='https://placehold.co/256x256/eef3e8/47772c?text='+encodeURIComponent('${a.name}')"><div><h1>${a.name}</h1><div class="publisher">${a.subtitle}</div><span class="tag">APP DETAILS</span></div></div><div class="stats"><div><strong>${a.version}</strong><span>VERSION</span></div><div><strong>${a.size}</strong><span>SIZE</span></div><div><strong>Android</strong><span>PLATFORM</span></div></div></div><div class="detail-body"><h2>About this app</h2><p>${a.desc}</p><h2>Download / Official page</h2><p>Use the official publisher or store page to check the latest version, permissions and availability.</p><a class="download" href="${a.link}" target="_blank" rel="noopener noreferrer">Open official app page ↗</a><div class="notice">Note: This page does not host APK files. Avoid unknown modified APKs and never provide account passwords or verification codes to third-party sites.</div></div></article>`;
+ document.getElementById('navHome').classList.remove('active');window.scrollTo({top:0,behavior:'smooth'});
+}
+function showHome(){document.getElementById('appDetail').classList.add('hidden');document.getElementById('home').classList.remove('hidden');document.getElementById('navHome').classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
+render();
+</script>
+</body>
+</html>
